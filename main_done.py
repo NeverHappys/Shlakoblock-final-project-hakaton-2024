@@ -62,7 +62,7 @@ def main(page: ft.Page):
 
         list_of_promt = []
 
-        for x in range(0, 9): #Собираем промпты из частей
+        for x in range(0, 15): #Собираем промпты из частей
             promt = 'Составь рацион на неделю, соответствующий следующим требованиям: ' + start[x] + main[x] + 'Исключить из рациона следующие блюда: ' + except_food[x] + 'Выведи ответ в виде: {Понедельник: ... } {Вторник: ...} ... {Воскресенье: ...}'
             list_of_promt.append(promt)
         return list_of_promt
@@ -95,7 +95,7 @@ def main(page: ft.Page):
     
     def ration(num): # Удобная функция, которая объединяет всю работу с ChatGPT и по номеру стола выдает список рационов
         list_of_promt = list_promt()
-        return get_days(list_of_promt[num])
+        return get_days(list_of_promt[num-1])
 
     #Создание функции смены темы
     def changetheme(e):
