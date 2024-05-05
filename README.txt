@@ -10,7 +10,7 @@ GitHub проекта:
 GitHub создателей:
 1-"https://github.com/NeverHappys"
 2-"https://github.com/tufto-cpp"
-3-" "
+3-"https://github.com/sadverysad"
 
 
 
